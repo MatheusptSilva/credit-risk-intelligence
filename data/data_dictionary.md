@@ -1,57 +1,57 @@
-# Data Dictionary
+# Dicionário de Dados
 
-This document describes the main variables used in the Credit Risk Intelligence project.
+Este documento descreve as principais variáveis utilizadas no projeto Credit Risk Intelligence.
 
-The complete original data dictionary is provided by the dataset source. This file documents the variables selected for the analysis.
+O dicionário de dados original completo é fornecido pela fonte do dataset. Este arquivo documenta as variáveis selecionadas para a análise.
 
 ## application_train.csv
 
-| Column | Description | Business Use |
+| Coluna | Descrição | Uso de Negócio |
 |---|---|---|
-| `SK_ID_CURR` | Unique client identifier | Join key across tables |
-| `TARGET` | Payment difficulty indicator | Default / delinquency target |
-| `AMT_INCOME_TOTAL` | Client annual income | Income-based risk segmentation |
-| `AMT_CREDIT` | Credit amount requested | Credit exposure analysis |
-| `AMT_ANNUITY` | Loan annuity amount | Financial commitment analysis |
-| `AMT_GOODS_PRICE` | Price of goods financed | Loan context analysis |
-| `DAYS_BIRTH` | Client age in days | Customer profile analysis |
-| `DAYS_EMPLOYED` | Employment duration in days | Employment stability analysis |
-| `NAME_INCOME_TYPE` | Client income category | Risk segmentation |
-| `NAME_EDUCATION_TYPE` | Client education level | Descriptive profile analysis |
-| `NAME_FAMILY_STATUS` | Client family status | Descriptive profile analysis |
-| `NAME_HOUSING_TYPE` | Client housing type | Descriptive profile analysis |
-| `CNT_CHILDREN` | Number of children | Household profile analysis |
-| `CNT_FAM_MEMBERS` | Number of family members | Household profile analysis |
+| `SK_ID_CURR` | Identificador único do cliente | Chave de junção entre as tabelas |
+| `TARGET` | Indicador de dificuldade de pagamento | Target de inadimplência |
+| `AMT_INCOME_TOTAL` | Renda anual do cliente | Segmentação de risco por renda |
+| `AMT_CREDIT` | Valor de crédito solicitado | Análise de exposição de crédito |
+| `AMT_ANNUITY` | Valor da parcela do empréstimo | Análise de comprometimento financeiro |
+| `AMT_GOODS_PRICE` | Preço do bem financiado | Análise de contexto do empréstimo |
+| `DAYS_BIRTH` | Idade do cliente em dias | Análise de perfil do cliente |
+| `DAYS_EMPLOYED` | Tempo de emprego em dias | Análise de estabilidade profissional |
+| `NAME_INCOME_TYPE` | Categoria de renda do cliente | Segmentação de risco |
+| `NAME_EDUCATION_TYPE` | Nível de escolaridade do cliente | Análise de perfil descritivo |
+| `NAME_FAMILY_STATUS` | Estado civil do cliente | Análise de perfil descritivo |
+| `NAME_HOUSING_TYPE` | Tipo de moradia do cliente | Análise de perfil descritivo |
+| `CNT_CHILDREN` | Número de filhos | Análise de perfil familiar |
+| `CNT_FAM_MEMBERS` | Número de membros da família | Análise de perfil familiar |
 
 ## previous_application.csv
 
-| Column | Description | Business Use |
+| Coluna | Descrição | Uso de Negócio |
 |---|---|---|
-| `SK_ID_PREV` | Unique previous application identifier | Previous application identification |
-| `SK_ID_CURR` | Unique client identifier | Join key with client table |
-| `NAME_CONTRACT_STATUS` | Previous application status | Approval and rejection analysis |
-| `AMT_APPLICATION` | Amount requested in previous application | Credit demand analysis |
-| `AMT_CREDIT` | Amount granted in previous application | Historical credit exposure |
-| `AMT_ANNUITY` | Previous loan annuity | Payment commitment analysis |
-| `CNT_PAYMENT` | Number of installments | Loan term analysis |
-| `DAYS_DECISION` | Days before current application when decision was made | Historical recency analysis |
+| `SK_ID_PREV` | Identificador único da solicitação anterior | Identificação da solicitação anterior |
+| `SK_ID_CURR` | Identificador único do cliente | Chave de junção com a tabela de clientes |
+| `NAME_CONTRACT_STATUS` | Status da solicitação anterior | Análise de aprovação e recusa |
+| `AMT_APPLICATION` | Valor solicitado na solicitação anterior | Análise de demanda de crédito |
+| `AMT_CREDIT` | Valor concedido na solicitação anterior | Exposição histórica de crédito |
+| `AMT_ANNUITY` | Parcela do empréstimo anterior | Análise de comprometimento de pagamento |
+| `CNT_PAYMENT` | Número de parcelas | Análise de prazo do empréstimo |
+| `DAYS_DECISION` | Dias antes da solicitação atual em que a decisão foi tomada | Análise de recência histórica |
 
 ## installments_payments.csv
 
-| Column | Description | Business Use |
+| Coluna | Descrição | Uso de Negócio |
 |---|---|---|
-| `SK_ID_PREV` | Previous credit identifier | Join key with previous applications |
-| `SK_ID_CURR` | Unique client identifier | Join key with client table |
-| `NUM_INSTALMENT_VERSION` | Installment plan version | Payment-plan context |
-| `NUM_INSTALMENT_NUMBER` | Installment sequence number | Payment-history context |
-| `DAYS_INSTALMENT` | Scheduled payment date in days | Due-date reference |
-| `DAYS_ENTRY_PAYMENT` | Actual payment date in days | Payment-date reference |
-| `AMT_INSTALMENT` | Amount due for the installment | Amount due analysis |
-| `AMT_PAYMENT` | Amount paid for the installment | Payment behavior analysis |
+| `SK_ID_PREV` | Identificador do crédito anterior | Chave de junção com solicitações anteriores |
+| `SK_ID_CURR` | Identificador único do cliente | Chave de junção com a tabela de clientes |
+| `NUM_INSTALMENT_VERSION` | Versão do plano de parcelamento | Contexto do plano de pagamento |
+| `NUM_INSTALMENT_NUMBER` | Número sequencial da parcela | Contexto do histórico de pagamento |
+| `DAYS_INSTALMENT` | Data programada do pagamento, em dias | Referência de data de vencimento |
+| `DAYS_ENTRY_PAYMENT` | Data real do pagamento, em dias | Referência de data de pagamento |
+| `AMT_INSTALMENT` | Valor devido da parcela | Análise de valor devido |
+| `AMT_PAYMENT` | Valor pago da parcela | Análise de comportamento de pagamento |
 
-## Project Definitions
+## Definições do Projeto
 
-- `TARGET = 1`: Client with payment difficulties.
-- `TARGET = 0`: Client without payment difficulties.
-- The original dataset uses anonymized variables and relative dates.
-- Derived variables and transformation rules will be documented in the Silver layer.
+- `TARGET = 1`: Cliente com dificuldades de pagamento.
+- `TARGET = 0`: Cliente sem dificuldades de pagamento.
+- O dataset original utiliza variáveis anonimizadas e datas relativas.
+- Variáveis derivadas e regras de transformação serão documentadas na camada Silver.
