@@ -1,40 +1,40 @@
-# Business Problem
+# Problema de Negócio
 
-## Context
+## Contexto
 
-NovaCred is a fictional consumer credit company that offers installment loans to a diverse customer base.
+A NovaCred é uma empresa fictícia de crédito ao consumidor que oferece empréstimos parcelados para uma base diversificada de clientes.
 
-The company has observed an increase in customers with payment difficulties. This creates financial exposure and makes it harder to balance credit growth with portfolio quality.
+A empresa tem observado um aumento no número de clientes com dificuldades de pagamento. Isso gera exposição financeira e torna mais difícil equilibrar o crescimento da carteira de crédito com a qualidade da carteira.
 
-## Problem Statement
+## Definição do Problema
 
-NovaCred needs a clear analytical view of its credit portfolio to identify customer segments with a higher risk of payment difficulties.
+A NovaCred precisa de uma visão analítica clara da sua carteira de crédito para identificar segmentos de clientes com maior risco de dificuldades de pagamento.
 
-Without this view, the company may apply overly generic credit policies, increase its exposure to losses, or miss opportunities to take preventive actions.
+Sem essa visão, a empresa pode aplicar políticas de crédito genéricas demais, aumentar sua exposição a perdas ou deixar de aproveitar oportunidades de ações preventivas.
 
-## Project Objective
+## Objetivo do Projeto
 
-Build a cloud-based analytics solution that transforms raw credit data into actionable insights for credit risk monitoring and customer segmentation.
+Construir uma solução analítica em cloud que transforme dados brutos de crédito em insights acionáveis para monitoramento de risco de crédito e segmentação de clientes.
 
-## Key Business Questions
+## Principais Perguntas de Negócio
 
-- What is the overall rate of customers with payment difficulties?
-- Which customer segments have a higher risk level?
-- Which financial and behavioral characteristics are associated with payment difficulties?
-- Which segments concentrate the largest credit exposure?
-- Which groups should be prioritized for preventive monitoring actions?
+- Qual é a taxa geral de clientes com dificuldades de pagamento?
+- Quais segmentos de clientes apresentam maior nível de risco?
+- Quais características financeiras e comportamentais estão associadas a dificuldades de pagamento?
+- Quais segmentos concentram a maior exposição de crédito?
+- Quais grupos devem ser priorizados para ações preventivas de monitoramento?
 
-## Expected Business Value
+## Valor de Negócio Esperado
 
-The analysis can support:
+A análise pode apoiar:
 
-- More targeted credit risk monitoring.
-- Identification of high-risk customer segments.
-- Preventive communication and collection strategies.
-- Better balance between portfolio growth and credit risk exposure.
+- Monitoramento de risco de crédito mais direcionado.
+- Identificação de segmentos de clientes de alto risco.
+- Estratégias preventivas de comunicação e cobrança.
+- Melhor equilíbrio entre crescimento de carteira e exposição a risco de crédito.
 
-## Important Note
+## Observação Importante
 
-NovaCred is a fictional business context created for this portfolio project.
+A NovaCred é um contexto de negócio fictício criado para este projeto de portfólio.
 
-The analysis uses anonymized historical data from the Home Credit Default Risk dataset. The findings are educational and do not represent real credit policies or decisions.
+A análise utiliza dados históricos anonimizados do dataset Home Credit Default Risk. Os resultados têm finalidade educacional e não representam políticas ou decisões reais de crédito.
